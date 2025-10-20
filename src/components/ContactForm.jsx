@@ -11,7 +11,7 @@ function ContactForm() {
           <img
             src={contact_image}
             alt=""
-            className="img-fluid rounded footer-ad"
+            className="img-fluid rounded"
           />
         </div>
         <div className="col-md-7">
