@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Footer() {
   return (
     <div className="footer_content">
+      <hr />
       <div className="container">
         <footer className="py-5">
           <div className="row">

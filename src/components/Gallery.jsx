@@ -38,9 +38,9 @@ function Gallery() {
   return (
     <div className="container mt-5">
       <h2 className="text-center mb-3">Our Gallery</h2>
-      <div className="row">
+      <div className="gallery">
         {galleryImages.map((image, index) => (
-          <div className="col-md-4 mb-3" key={index}>
+          <div key={index}>
             <img src={image.src} alt={image.alt} className="img-fluid rounded" />
           </div>
         ))}

@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../assets/logo/logo.jpg';
-
+import marriage_event_image from '../assets/marriage-event.jpg'
 
 import '../styles/style.css';
 
@@ -25,7 +25,7 @@ function Header() {
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            <img src={logo} alt="" width="150" />
+            <img src={logo} alt="" height="90" />
           </a>
           <button
             className="navbar-toggler"
@@ -66,12 +66,17 @@ function Header() {
                       <ul className="menu">
                         <li>
                           <a className="dropdown-item" href="#">
+                            Event Planning
+                          </a>
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="#">
                             Decoration
                           </a>
                         </li>
                         <li>
                           <a className="dropdown-item" href="#">
-                            Event Organisation
+                            Catering
                           </a>
                         </li>
                         <li>
@@ -85,7 +90,7 @@ function Header() {
                       </ul>
                     </div>
                     <img
-                      src="https://th.bing.com/th/id/OIP.o6OpWzB9PiRuc0zfo9KzMQAAAA?rs=1&pid=ImgDetMain"
+                      src={marriage_event_image}
                       alt="Service Image"
                       className="dropdown-image me-2"
                     />

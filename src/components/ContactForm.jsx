@@ -1,4 +1,5 @@
 import React from 'react';
+import contact_image from '../assets/contact.jpg';
 
 
 
@@ -8,7 +9,7 @@ function ContactForm() {
       <div className="row align-items-center">
         <div className="col-md-5">
           <img
-            src="https://www.visionvivaah.com/blog/wp-content/uploads/2019/05/Best-Event-Planners-In-Mumbai.jpg"
+            src={contact_image}
             alt=""
             className="img-fluid rounded footer-ad"
           />

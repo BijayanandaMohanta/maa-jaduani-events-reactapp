@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Meow+Script&family=Playwrite+PL:wght@100..400&family=Space+Grotesk:wght@300..700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 h1,h2,h3,h4,h5{
-    font-family: "Edu AU VIC WA NT Pre", 'Poppins';
+    font-family: "Edu AU VIC WA NT Pre", 'Inter';
 }
 .menu{
     margin: 0;
@@ -137,7 +138,8 @@ button.owl-dot.active{
     background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(0,0,0,0) 100%);
 }
 .services-section{
-    background: url(../assets/background-service-home.jpg);
+    background-image: linear-gradient(red, green), url(../assets/background-service-home.jpg);
+    background-blend-mode: overlay;
     background-size: cover;
     padding-block: 4rem;
     margin-top: 5rem;
@@ -153,6 +155,8 @@ button.owl-dot.active{
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
     padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     h4{
         position: relative;
     }
@@ -232,5 +236,20 @@ button.owl-dot.active{
     z-index: 10;
     img{
         width: 100px;
+    }
+}
+
+.accordion-button:focus{
+    box-shadow: unset !important;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: #000 !important;
+    color: #fff !important;
+}
+.gallery{
+    columns: 3;
+    img{
+        margin-bottom: .5rem;
     }
 }

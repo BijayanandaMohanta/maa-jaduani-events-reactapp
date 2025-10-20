@@ -66,7 +66,7 @@ function Home() {
 
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-fluid overflow-hidden">
         <Slider {...sliderSettings}>
           <div>
             <img src={slider1} alt="" style={{ width: '100%', height: '38rem', objectFit: 'cover' }} />
@@ -162,7 +162,7 @@ function Home() {
           <div className="row">
             {services.map((service, index) => (
               <div className="col-md-6 mb-3" key={index}>
-                <div className="d-flex align-items-center gap-3 service-hcard">
+                <div className="service-hcard">
                   <Slider {...{
                       dots: false,
                       infinite: true,
