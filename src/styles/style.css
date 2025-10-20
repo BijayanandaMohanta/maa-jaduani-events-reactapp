@@ -173,8 +173,9 @@ button.owl-dot.active{
     min-width: 10rem;
 }
 .service-image-slider .item img{
-    width: 16rem;
+    width: unset !important;
     height: 13rem;
+    aspect-ratio: 4/3 !important;
     object-fit: cover;
     border-radius: 4px;
     -webkit-border-radius: 4px;
