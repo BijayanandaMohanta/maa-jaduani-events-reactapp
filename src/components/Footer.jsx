@@ -64,26 +64,20 @@ function Footer() {
               </form>
             </div>
           </div>
-// TODO: Review accessibility of this href attribute
 
           <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
             <p>© 2024 Company, Inc. All rights reserved.</p>
-// TODO: Review accessibility of this href attribute
             <ul className="list-unstyled d-flex">
               <li className="ms-3">
-// TODO: Review accessibility of this href attribute
                 <a href="#" className="link-body-emphasis">
                   <i className="bi bi-facebook"></i>
                 </a>
-// TODO: Review accessibility of this href attribute
               </li>
               <li className="ms-3">
                 <a href="#" className="link-body-emphasis">
-// TODO: Review accessibility of this href attribute
                   <i className="bi bi-instagram"></i>
                 </a>
               </li>
-// TODO: Review accessibility of this href attribute
               <li className="ms-3">
                 <a href="#" className="link-body-emphasis">
                   <i className="bi bi-whatsapp"></i>
