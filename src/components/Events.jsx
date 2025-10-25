@@ -8,7 +8,7 @@ function Events() {
       title: 'Corporate Conference',
       description: 'A professional conference for industry leaders.',
       date: '2025-11-15',
-      location: 'Convention Center',
+      location: 'Convention',
       image: eventImage,
     },
     {
@@ -34,16 +34,16 @@ function Events() {
         {eventsData.map((event, index) => (
           <div className="col-md-4 mb-3" key={index}>
             <div className="card">
-              <img src={event.image} className="card-img-top" alt={event.title} />
+              <div className="p-2"><img src={event.image} className="rounded img-fluid" alt={event.title} /></div>
               <div className="card-body">
-                <h5 className="card-title">{event.title}</h5>
+                <div className="d-flex justify-content-between border-bottom mb-3 pb-1">
+                  <h5 className="card-title">{event.title}</h5>
+                  <div className='d-grid'>
+                    <small className="text-muted">Date: {event.date}</small>
+                    <small className="text-muted">Location: {event.location}</small>
+                  </div>
+                </div>
                 <p className="card-text">{event.description}</p>
-                <p className="card-text">
-                  <small className="text-muted">Date: {event.date}</small>
-                </p>
-                <p className="card-text">
-                  <small className="text-muted">Location: {event.location}</small>
-                </p>
               </div>
             </div>
           </div>

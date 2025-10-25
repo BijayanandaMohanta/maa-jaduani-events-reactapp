@@ -1,4 +1,6 @@
 import React from 'react';
+import { Fancybox } from "@fancyapps/ui/dist/fancybox/";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import slider1 from '../assets/slider-1.jpg';
 import slider2 from '../assets/slider-2.jpg';
@@ -8,6 +10,12 @@ import event from '../assets/event.jpg';
 import about from '../assets/about.jpg';
 
 function Gallery() {
+  Fancybox.bind("[data-fancybox]", {
+    zoomEffect: false,
+    Carousel: {
+      gestures: false,
+    },
+  });
   const galleryImages = [
     {
       src: slider1,
@@ -41,7 +49,13 @@ function Gallery() {
       <div className="gallery">
         {galleryImages.map((image, index) => (
           <div key={index}>
-            <img src={image.src} alt={image.alt} className="img-fluid rounded" />
+            <a data-fancybox="gallery" data-src={image.src}>
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="img-fluid rounded"
+              />
+            </a>
           </div>
         ))}
       </div>
